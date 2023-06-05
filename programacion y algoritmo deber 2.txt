@@ -1,0 +1,2159 @@
+//1Leer un carácter y deducir si está o no comprendido entre las
+//letras 'a'... 'z' y 'A'...'Z' ambas inclusive y sino verificar si es un signo de puntuacion ", . ; :"
+//y si no presentar solo el caracter.
+// boseto
+// entrada: digite un caracter
+//proceso:  Si x >="a" y x <="z"  
+// escrbir que el caracter es una letra 
+//SiNo        
+//si x = ´.´ o  x =´,´ o x =´;´ o x = ´:´
+//  escribir el caracter es un signo de puntuacion 
+//FinSi
+//FinSi
+// salida: escrbir el mensaje en la pantalla.
+
+
+Funcion ejercicio1()
+	Definir x como caracter;
+	Escribir  " degite un caracter" ;
+	leer x;
+	
+	Si x >= "a" y x <= "z" o x >= "A" y x <= "Z" Entonces
+		escribir "el caracter es una letra:",x ;
+	SiNo
+		si x = "," o x ="." o x =";" o  x =":" Entonces 
+			escribir "el caracter es un signo de puntuacion:",x ;
+		FinSi
+	FinSi
+FinFuncion
+
+
+algoritmo ejercicios 
+	ejercicio1()
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//2Leer un carácter y deducir si este es un numero(0..9) o una vocal(a,e,i,o,u)
+// bosquejo
+//entrada: dijite el caracter 
+//proceso: 
+//si c >= 0 y c <= 9 
+//Escribir  "el caracter es un numero:",c;
+//SiNo
+// c ="a" o c="e" o c="i" o c ="o" o  c ="u" entonces 
+//escribir "el caracter es una vocal:",c;
+//salida: escribir el mensaje en la pantalla 
+
+
+
+Funcion ejercicio2()
+	definir c Como Caracter;
+	escribir "digite un caracter" ;
+	leer c;
+	si c >= "0" y c <= "9" Entonces
+		Escribir "el caracter es un numero:",c;
+	SiNo  
+		si c ="a" o c ="e" o c ="i" o c ="o" o c ="u" Entonces
+			escribir "el caracter es una vocal:", c;
+		FinSi	
+	Finsi
+FinFuncion
+
+
+algoritmo ejercicios
+	ejercicio2()
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//3Dado un caracter vocal presentar su respectivo valor ascii
+//boseto
+//entrada: definir la variable car 
+//proceso: escribir: digite un cracter     leer car
+// Segun car Hacer
+//"a":escribir "a=97";
+//"e":Escribir "e=101";
+//"i":escribir "i=105";
+//"o":Escribir "o=111";
+//"u":Escribir "u=117";
+//"A":Escribir "A=65";
+//"E":Escribir "E=69";
+//"I":Escribir "I=73";
+//"O":Escribir "O=79";
+//"U":Escribir "U=85";
+//FinSegun
+//salida: mostrar cada vocal con su numero ascii corespondiente 
+
+Funcion ejercicio3()
+	definir car como caracter;
+	escribir "digite un caracter";
+	leer car
+	Segun car Hacer
+		"a":
+			escribir "a=97";
+		"e":
+			Escribir "e=101";
+		"i":
+			escribir "i=105";
+		"o":
+			Escribir "o=111";
+		"u":
+			Escribir "u=117";
+		"A":
+			Escribir "A=65";
+		"E":
+			Escribir "E=69";
+		"I":
+			Escribir "I=73";
+		"O":
+			Escribir "O=79";
+		"U":
+			Escribir "U=85";
+	FinSegun
+FinFuncion
+
+Algoritmo ejercicios
+	ejercicio3()
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+//4Leer dos nombres y verificar si estos son iguales, si el primer nombre es menor
+//que el segundo dado su contenido.
+//boseto
+//entrada definir los nombres, digite y guardar 
+//proceso: si nombre1 = nombre2 entoces 
+// Escribir los nombres son iguales 
+//SiNo
+// si nombre1 < nombre2 Entonces
+//escribir "el primer nombre es menor y el segundo es mayor";
+//SiNo
+//si nombre1 > nombre2 Entonces
+//Escribir "el primer nombre es mayor y el segundo es menor";
+//FinSi 
+//finsi
+//salida: presentar en pantallas la respuesta segun la condicio q se digito  
+Funcion ejercicio4()
+	Definir nombre1, nombre2 Como caracter;
+	escribir "digite dos nombres";
+	leer nombre1, nombre2;
+	Si nombre1 = nombre2 entonces 
+		escribir "los nombres son iguales";
+	SiNo
+		si nombre1 < nombre2 Entonces
+			escribir "el primer nombre es menor y el segundo es mayor";
+		SiNo
+			si nombre1 > nombre2 Entonces
+				Escribir "el primer nombre es mayor y el segundo es menor";
+				
+			FinSi
+			
+		FinSi
+	FinSi
+FinFuncion
+
+Algoritmo ejercicios
+	ejercicio4()
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	/5Ingresar dos numeros y determinar si son iguales o si el primer numero es menor
+//que el segundo dado su valor
+//definir x1,x2 
+funcion ejercicio5()
+	Definir x1 , x2 Como entero;
+	Escribir ("Digite los dos numeros:");
+	Leer x1 , x2 ;
+	Si (x1=x2)  Entonces
+		Escribir ("Los numeros son iguales:");
+	SiNo
+		Si (x1>x2) Entonces
+			Escribir ("El primer numero es mayor:");
+		SiNo
+			Escribir ("El primer numero es menor al segundo :");
+		FinSi
+		
+		
+	FinSi
+FinFuncion
+
+Algoritmo ejercicios
+	ejercicio5()
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//6Ingresar 3 números, determinar cuál es el mayor o si son iguales
+Funcion Ejercicio6()
+	Definir n1, n2 , n3 Como Entero;
+	Escribir ("Digite los numeros:");
+	Leer n1 , n2 , n3;
+	Si (n1>n2) y (n1>n3) Entonces
+		Escribir ("El primer numero es mayor:");
+	SiNo
+		Si (n2>n1) y (n2>n3) Entonces
+			Escribir ("EL segundo numero es mayor:");
+		SiNo
+			Si (n3>n1) y (n3>n2) Entonces
+				Escribir ("El tercer numero es mayor:");
+			SiNo
+				Escribir ("Los numeros son iguales:");
+			FinSi
+		FinSi
+	FinSi
+FinFuncion
+
+Algoritmo ejercicios
+	ejercicio6()
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//7Ingresar un numero y determinar si es neutro, positivo o negativo
+	//bosquejo 
+	// entrada: definir num como reales
+	//proceso: escrbir: digite un numero    leer: num
+	       //si num > 0 Entonces
+	          //escribir "el numero es positivo", num;
+	      //SiNo 
+	           //si num < 0 Entonces
+	              //escribir "el numero es negativo",num;
+	       //SiNo
+				//si num = 0 Entonces
+				//escribir "el numero es neutro",num;
+	        //FinSi
+		//FinSi
+
+
+
+	Funcion ejercicio7()
+	definir num como reales;
+	escribir "digite un numero";
+	leer num;
+	si num > 0 Entonces
+		escribir "el numero es positivo", num;
+	SiNo 
+		si num < 0 Entonces
+			escribir "el numero es negativo",num;
+		SiNo
+			si num = 0 Entonces
+				escribir "el numero es neutro",num;
+			FinSi
+		FinSi
+	FinSi
+FinFuncion
+
+Algoritmo ejercicios
+	ejercicio7()
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+//8Determinar cuanto se debe pagar por x cantidad de lápices,
+//considerando que si son más de 1000 el costo es de 1 , caso contrario
+//el precio será 1,50
+
+
+	funcion ejercicio8()
+	Definir CantidadCompra Como Entero;
+	Definir PorMayor Como Entero;
+	Definir PorMenor Como Real;
+	Definir Resultado Como Real;
+	
+	PorMenor = 1.50;
+	PorMayor = 1;
+	
+	Escribir "Cuantos lapices desea llevar";
+	Leer CantidadCompra;
+	
+	Si (CantidadCompra < 1000) Entonces
+		Resultado = CantidadCompra * PorMenor;
+		Escribir "La cantidad a pagar es: $",Resultado;
+	SiNo
+		Si (CantidadCompra > 1000)
+			Resultado = CantidadCompra * PorMayor;
+			Escribir "El precio a pagar es: $",Resultado;
+		FinSi
+	FinSi	
+FinFuncion
+
+Algoritmo ejercicios
+	ejercicio8
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//9Almacén "Somos Mas" tiene una promoción: a todos los trajes que tienen un precio superior a 2500,
+//se les aplicará un descuento del 15%,a todo los demás se les aplicará sólo el 8%.
+
+Funcion ejercicio9()
+	Definir cantidadTrajes Como Entero
+	Definir i Como Entero
+	Definir precio, descuento, total, totalDescuento Como Real
+	
+	Escribir "Bienvenido a Almacén Somos Mas"
+	Escribir "Ingrese la cantidad de trajes:"
+	Leer cantidadTrajes
+	
+	total <- 0
+	
+	Para i <- 1 Hasta cantidadTrajes Con Paso 1 Hacer
+		Escribir "Ingrese el precio del traje ", i, ":"
+		Leer precio
+		
+		Si precio > 2500 Entonces
+			descuento <- 0.15
+		Sino
+			descuento <- 0.08
+		FinSi
+		
+		totalDescuento <- precio * descuento
+		total <- total + precio - totalDescuento
+	FinPara
+	
+	Escribir "El total a pagar con el descuento aplicado es:", total
+	
+FinFuncion
+
+Algoritmo ejercicios 
+	ejercicio9
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+//10"Somos Mas" es una empresa dedicada a ofrecer banquetes; sus tarifas son las siguientes:El costo de platillo por persona es de $95.00, pero si el número de
+//personas es mayor a 200 pero menor o igual a 300, el costo es de $85.00.Para más de 300 personas el costo por platillo es de $75.00. Se requiere un 
+//algoritmo que ayude a determinar el presupuesto que se debe presentar a los clientes que deseen realizar un evento
+
+funcion ejecicio10()
+	Definir numeroPersonas Como Entero
+	Definir costoPorPersona, presupuestoTotal Como Real
+	
+	Escribir "Bienvenido a la empresa de banquetes"
+	Escribir "Ingrese el número de personas del evento:"
+	Leer numeroPersonas
+	
+	Si numeroPersonas > 0 Entonces
+		Si numeroPersonas <= 200 Entonces
+			costoPorPersona <- 95.00
+		Sino 
+			Si numeroPersonas <= 300 Entonces
+				costoPorPersona <- 85.00
+			Sino
+				costoPorPersona <- 75.00
+			FinSi
+		FinSi
+		
+		presupuestoTotal <- costoPorPersona * numeroPersonas
+		
+		Escribir "El presupuesto total para", " ", numeroPersonas," ", "personas es:", presupuestoTotal
+	Sino
+		Escribir "El número de personas debe ser mayor a cero."
+	FinSi
+	
+FinFuncion
+
+Algoritmo ejercicios
+	ejecicio10
+FinAlgoritmo
+
+
+
+
+
+
+//11La asociación de vinicultores tiene como política fijar un precio inicial al kilo
+//de uva, la cual se clasifica en tipos A y B, y además en tamaños 1 y 2.
+//Cuando se realiza la venta del producto, ésta es de un solo tipo y tamaño, se
+//requiere determinar cuánto recibirá un productor por la uva que entrega en un
+//embarque, considerando lo siguiente:Si es de tipo A, se le cargan 20¢ al precio
+//inicial cuando es de tamaño 1; y 30¢ si es de tamaño 2. Si es de tipo B, se rebajan
+//30¢ cuando es de tamaño 1, y 50¢ cuando es de tamaño 2.
+//Realice un algoritmo para determinar la ganancia obtenida
+
+//Ingresar un precio inicial
+//Ingresar los tipos A - B (Leer) y los tamaños 1-2 (Leer)
+//Si es tipo = A son 0.20 centavos al precio inicial cuando el tamñano es 1 y si es tamaño 2 son 30 centavos
+//si es de tipo B se rebajan 30 centavos al tamaño 1 y 50 al tamaño 2
+//Escribimos la ganacia obtenida
+
+
+Funcion Ejercicio11()
+	Definir kilos, tamaño Como Entero
+	Definir tipo Como Caracter
+	Definir ganancia, precio Como Real
+	Escribir "Ingresa los kilos de uva"
+	leer kilos
+	Escribir "Ingresa el precio por kilo"
+	leer precio
+	Escribir "Ingresa el tipo de uva (A o B)"
+	leer tipo
+	Escribir "Ingresa el tamaño de la uva (1 o 2)"
+	leer tamaño
+	
+	si tipo = "A" Entonces
+		si tamaño = 1 Entonces
+			precio = precio + 0.20
+		SiNo
+			precio = precio + 0.30
+		FinSi
+	SiNo
+		si tipo = "B" Entonces
+			si tamaño = 1 Entonces
+				precio = precio - 0.30
+			SiNo
+				precio = precio - 0.50
+			FinSi
+		FinSi
+	FinSi
+	ganancia = precio * kilos
+	Escribir "La ganancia es de : $",ganancia
+FinFuncion
+Algoritmo ejercicios 
+	Ejercicio11
+FinAlgoritmo
+
+
+
+
+//12El director de carrera de software está organizando un viaje de estudios,
+//y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar
+//a la compañía de viajes por el servicio. La forma de cobrar es la siguiente:
+//si son 100 alumnos o más, el costo por cada alumno es de $65.00;
+//de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos
+//de 30, el costo de la renta del autobús es de $4000.00, sin importar el número
+//de alumnos.Realice un algoritmo que permita determinar el pago a la compañía
+//de autobuses y lo que debe pagar cada alumno por el viaje
+
+//Verificamos el numero de alumnos que van a ir al viaje
+//si son mas de 100 alumnos el coto por cada almuno seria de 65.00
+//si son >= 50 y <= 99 entonces cuesta 70
+//si son >= 30 y <= 49 entonces pagaran 95.00
+//Y si son < de 30 el costo de la renta es de 4000$
+
+
+
+Funcion Ejercicio12()
+	Definir num_alumnos Como Entero
+	Definir total Como Real
+	//Ingresamos la cantidd de alumons
+	Escribir "Cantidad de alumnos";
+	Leer num_alumnos
+	
+	si num_alumnos >= 100 Entonces
+		total = num_alumnos * 65
+	SiNo
+		si num_alumnos >= 50 y num_alumnos <= 99 Entonces
+			total = num_alumnos * 70
+		SiNo
+			si num_alumnos >= 30 y num_alumnos <= 49 Entonces
+				total = num_alumnos * 95
+			SiNo
+				total = 4000
+			FinSi
+		FinSi
+	FinSi
+	pago_alumno <- total / num_alumnos
+	Escribir "El total a pagar por alumno es: $", pago_alumno
+	Escribir "El total a pagar por la renta del autobús es: $",total
+FinFuncion
+
+
+
+
+Algoritmo ejercicios 
+	Ejercicio12	
+FinAlgoritmo
+
+
+
+
+
+
+//13Una compañía de viajes cuenta con tres tipos de autobuses (A, B y C),
+//cada uno tiene un precio por kilómetro recorrido por persona, los costos respectivos son $2.0,
+//$2.5 y $3.0. Se requiere determinar el costo total y por persona del viaje considerando que
+//cuando éste se presupuesta debe haber un mínimo de 20 personas, de lo contrario el cobro se
+//realiza con base en este número límite.
+
+
+Funcion ejercicio13()
+	definir autobusT,A , B, C como caracter;
+	definir k,num_p Como entero;
+	definir precioTotal, precio Como Real;
+	Escribir "digite que tipo de autobus cogio: A,B,C ";
+	leer autobusT;
+	escribir "digite cuantos kilometros recorrio";
+	leer k;
+	Escribir " digite cuantas personas habia en el autobus";
+	leer num_p;
+	Si autobusT = "A" o autobusT = "B" o autobusT = "C" Entonces
+		si autobusT = "A" Entonces
+			precio <- k * 2.0;
+		SiNo
+			si autobusT = "B" Entonces
+				precio <- k * 2.5;
+			SiNo
+				si autobusT = "C" Entonces
+					precio <- k * 3.0;
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	si num_p <= 20 Entonces
+		precioTotal <- precio * 20;
+	SiNo
+		si num_p > 20 Entonces
+			precioTotal <- num_p * precio;
+		FinSi
+	FinSi
+	Escribir "el total a pagara es:",precioTotal;
+	escribir "el total a pagar por personas es:",precioTotal/precio;
+FinFuncion
+Algoritmo ejercicios
+	ejercicio13
+FinAlgoritmo
+
+
+
+
+
+
+
+//14Determinar cuanto se debe pagar por cierta cantidad de colas,
+//considerando que si son más de 23 colas, el costo por unidad
+//	es de $0,50 caso contrario el precio será 20% mas.
+//Al costo resultante calcular el 12% del iva. Se pide presentar:
+//	cantidad comprada, el costo ´por unidad, el total sin iva
+//	el iva y el total a pagar.
+//entrada: definir cantidad de colas, resultado, costo total, total apagar, costo del iva,x
+//proceso: difite la cantidad de colas y guardar en    leer:Cantidad de colas 
+//  x= 0.50
+//  iva0= 0.12
+//  Si C_cantidad >=  23 Entonces
+//  resultado = C_colas 
+// SiNo
+//  resultado <- x+(x * 0.20);
+//   FinSi
+//     costo_total<- C_colas * resultado;
+//     c_iva <- costo_total * iva/100;
+//    totalpagar <- costo_total+ c_iva;
+//     Escribir "la cantidad de colas comprada es:",c_colas;
+//    Escribir "El costo por unidad es de:",x;
+//    Escribir "El valor a pagar de las colas sin iva es:",costo_total;    
+//    Escribir "El iva es:",iva;
+//    Escribir "El valor a pagar de las colas es:",totalpagar;
+
+
+
+funcion ejercicio14()
+	Definir C_colas  Como Entero;
+	Definir resultado ,costo_total,totalpagar,c_iva,iva Como Real;
+	Definir x Como Real;
+	Escribir "Digite  cantidad de colas:";
+	Leer C_colas;
+	x <- 0.50;
+	iva <- 0.12;
+	Si C_colas >= 23 Entonces
+		resultado <- C_colas * x;
+	SiNo
+		resultado <- x+(x * 0.20);
+	FinSi
+	costo_total<- C_colas * resultado;
+	c_iva <- costo_total * iva/100;
+	totalpagar <- costo_total+ c_iva;
+	Escribir "la cantidad de colas comprada es:",c_colas;
+	Escribir "El costo por unidad es de:",x;
+	Escribir "El valor a pagar de las colas sin iva es:",costo_total;
+	Escribir "El iva es:",iva;
+	Escribir "El valor a pagar de las colas es:",totalpagar;
+FinFuncion
+Algoritmo ejercicios
+	ejercicio14
+FinAlgoritmo
+
+
+
+
+
+
+
+//15 
+Funcion Ejercicio15()
+	Definir descuento, descuento2,descuentoI,descuentoA,total,pagar Como Real;
+	Definir productos ,precioI Como Entero;
+	Escribir ("Digite cantidad de productos:");
+	Leer productos;
+	Escribir ("Digite precio del producto:");
+	Leer precioI;
+	descuento<-0.1;
+	descuento2<-0.2;
+	Si productos<20 Entonces
+		descuentoI<-precioI-(precioI*descuento2);
+		total<-descuentoI*productos;
+		descuentoA<-total*0.05;
+		pagar<-total-descuentoA;
+	SiNo
+		descuentoI<-precioI-(precioI*descuento);
+		total<-descuentoI*productos;
+		descuentoA<-total*0.05;
+		pagar<-total-descuentoA;
+	FinSi
+	Escribir ("Cantidad de productos comprado es:"),productos;
+	Escribir ("El precio del producto es :"),precioI,"$";
+	Escribir ("El precio del producto ya con el descuento ahora es:"),descuentoI,"$";
+	Escribir ("El total a pagar del descuento inical es :"),total;
+	Escribir ("El descuento adicional del 5% es:"),descuentoA;
+	Escribir ("El total a pagar es:"),pagar;
+FinFuncion
+Algoritmo ejercicios
+	Ejercicio15
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Funcion Ejercicio16 ()
+	Definir cita,consulta Como Entero;
+	Definir total Como Real;
+	Escribir ("Digite tipo de cita:");
+	Leer cita;
+	Si cita<=3 Entonces
+		consulta<-200;
+		total<-consulta*cita;
+	SiNo
+		Si cita<=5 Entonces
+			consulta<-150;
+			total<-600+(consulta*(cita-3));
+		SiNo
+			Si cita<=8 Entonces
+				consulta<-100;
+				total<-900+(consulta*(cita-5));
+			SiNo
+				consulta<-50;
+				total<-1200+(consulta*(cita-8));
+			FinSi
+		FinSi
+	FinSi
+	Escribir ("El numero de cita es :"),cita;
+	Escribir ("El valor de la consulta es :"),"$",consulta;
+	Escribir ("El total a pagar por el tiempo de tratamiento es :"),"$",total;
+FinFuncion
+Algoritmo ejercicios 
+	Ejercicio16
+	
+FinAlgorimo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//17Fábricas "El Baraton" produce articulos con claves (1, 2, 3, 4, 5 y 6). Se requiere
+ 
+Funcion ejercicio17()
+	DEFINIR producto, cp,pv,mp, mo,gf ,cpf Como real
+	escribir "ingrese codigo del producto (1,2,3,4,5,6) y valor de materia prima "
+	leer  producto,mp
+	si producto=3 o producto=4
+		mo=0.75*mp
+	sino
+		si producto=1 o producto=5
+			mo=0.80*mp
+		SiNo
+			si producto=2 o producto=6
+				mo=0.85*mp
+				
+			FinSi
+		finsi 
+	finsi 
+	si producto=2 o producto=5
+		gf=0.30*mp
+	SiNo
+		si producto=3 o producto=6
+			gf=0.35*mp
+		SiNo
+			si producto=1 o prdducto=4
+				gf= 0.28 * mp 
+			FinSi
+		FinSi
+	FinSi
+	cp=mp +mo+gf
+	cpf=0.45*cp
+	pv= cp + cpf
+	escribir " la mano de obra es " mo 
+	escribir "materia prima " mp
+	escribir "los gastos de fabricacion " gf 
+	escribir " el costo de produccion es " cp 
+	escribir "el precio de venta es " pv
+FinFuncion
+
+Algoritmo ejercicios 
+	ejercicio17
+FinAlgoritmo
+
+
+//18El banco XYZ ha decidido aumentar el límite de crédito de las tarjetas de crédito
+//de sus clientes, para esto considera que:
+//Si su cliente tiene tarjeta tipo 1, el aumento será del 25%.
+//Si tiene tipo 2 el aumento será del 35%
+//Si tiene tipo 3, el aumento será del 40%
+//Para cualquier otro tipo será del 50%
+//Realizar un diagrama de flujo que ayude al banco a determinar el nuevo límite
+//	de crédito que tendrá una persona en su tarjeta
+Funcion ejercicio18()
+	Definir tipo_tarjeta como Entero
+	Definir limite_actual como Real
+	Escribir "Ingrese el tipo de tarjeta"
+	Leer tipo_tarjeta;
+	Segun tipo_tarjeta Hacer
+		1:
+			Escribir "Ingrese el limite de la tarjeta"
+			Leer limite_tarjeta
+			nuevo_limite = limite + (limite * 0.35) 
+			Escribir "El nuevo limite con el 35% es de: nuevo_limite"
+		2:
+			Escribir "Ingrese el limite de la tarjeta"
+			Leer limite_tarjeta
+			nuevo_limite = limite + (limite * 0.40) 
+			Escribir "El nuevo limite con el 40% es de: nuevo_limite"
+		3:
+			Escribir "Ingrese el limite de la tarjeta"
+			Leer limite_tarjeta
+			nuevo_limite = limite + (limite * 0.50) 
+			Escribir "El nuevo limite con el 50% es de: nuevo_limite"
+		De Otro Modo:
+	Fin Segun
+FinFuncion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ejercicio 19
+// Una compañía de paquetería internacional tiene servicio en algunos países de América del Norte, América Central, América del Sur, Europa y Asia. El costo por
+//el servicio de paquetería se basa en el peso del paquete y la zona a la que va dirigido. Ver tabla Parte de sus políticas implica que los paquetes con un peso superior a 5kg
+// no son transportados , esto es por cuestión de logística y de seguridad.
+//América de norte 11.00$
+//América central 10.00$
+//América del sur 12.00$
+//Europa 24.00$
+//Asia 27.00$
+Funcion ejercicio19()
+	Definir pesoPaquete Como Real
+	Definir zonaDestino Como Caracter
+	Definir costoTotal Como Real
+	
+	Escribir "Bienvenido a la compañía de paquetería internacional"
+	Escribir "Ingrese el peso del paquete en kilogramos:"
+	Leer pesoPaquete
+	
+	Si pesoPaquete <= 5 Entonces
+		Escribir "Ingrese la zona de destino (N = América del Norte, C = América Central, S = América del Sur, E = Europa, A = Asia):"
+		Leer zonaDestino
+		
+		Segun zonaDestino Hacer
+			"N":
+				costoTotal <- pesoPaquete * 11.00
+				Escribir "El costo de envío para un paquete de", pesoPaquete, "kg a la zona América del Norte es:", costoTotal
+			"C":
+				costoTotal <- pesoPaquete * 10.00
+				Escribir "El costo de envío para un paquete de", pesoPaquete, "kg a la zona América Central es:", costoTotal
+			"S":
+				costoTotal <- pesoPaquete * 12.00
+				Escribir "El costo de envío para un paquete de", pesoPaquete, "kg a la zona América del Sur es:", costoTotal
+			"E":
+				costoTotal <- pesoPaquete * 24.00
+				Escribir "El costo de envío para un paquete de", pesoPaquete, "kg a la zona Europa es:", costoTotal
+			"A":
+				costoTotal <- pesoPaquete * 27.00
+				Escribir "El costo de envío para un paquete de", pesoPaquete, "kg a la zona Asia es:", costoTotal
+			De Otro Modo:
+				Escribir "Zona de destino inválida."
+		FinSegun
+	Sino
+		Escribir "El paquete no puede ser transportado debido a su peso superior a 5kg."
+	FinSi
+FinFuncion 
+
+Algoritmo ejercicios 
+	ejercicio19
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//20Se desea realizar una estadistica de los pesos de los alumnos
+//de la UNEMI de acuerdo a la siguiente tabla
+//alumnos de menos 40 kg
+//alumnos entre 40 y 50 kg
+//alumnos mas de 50 y menos de 60 kg
+//alumnos mas de 60 kg.
+//La entrada de los pesos se terminará cuando se ingrese el valor
+//de peso cero. Al final deberá presentar cuantos alumnos hay por
+//rango de pesos y el promedio de cada rango.
+Funcion Ejercicio20()
+	Definir peso_alum Como Real;
+	Definir peso como real;
+	Definir ran1,ran2,ran3,ran4 Como Real;
+	Definir suma1,suma2,suma3,suma4 Como Real;
+	Definir prom1,prom2,prom3,prom4 Como Real;
+	ran1<-0;
+	ran2<-0;
+	ran3<-0;
+	ran4<-0;
+	
+	suma1<-0;
+	suma2<-0;
+	suma3<-0;
+	suma4<-0;
+	
+	prom1<-0;
+	prom2<-0;
+	prom3<-0;
+	prom4<-0;
+	
+	peso_alum<-1;
+	Mientras peso_alum>=1 Hacer
+		Escribir ("Digite el peso del alumno:");
+		Leer peso_alum;
+		Si peso_alum<40 Entonces
+			ran1<-ran1+1;
+			suma1<-suma1+peso_alum;
+			prom1<-suma1/ran1;
+		SiNo
+			Si (peso_alum>=40 y peso_alum<=50) Entonces
+				ran2<-ran2+1;
+				suma2<-suma2+peso_alum;
+				prom2<-suma2/ran2;
+			SiNo
+				Si (peso_alum>50 y peso_alum<=60) Entonces
+					ran3<-ran3+1;
+					suma3<-suma3+peso_alum;
+					prom3<-sum3/ran3;
+				SiNo
+					Si peso_alum>60 Entonces
+						ran4<-ran4+1;
+						suma4<-suma4+peso_alum;
+						prom4<-suma4/ran4;
+					SiNo
+						Escribir "Peso incorrecto";
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinMientras
+	Escribir "En el rango de menos de 40kg hay :",ran1," alumnos.";
+	Escribir "En el rango de entre 40 y 50 kg hay: ",ran2," alumnos.";
+	Escribir "En el rango de mas de 50 y menos de 60 kg hay:",ran3," alumnos.";
+	Escribir "En el rango de mas de 60 kg hay :",ran4," alumnos.";
+	
+	Escribir "El promedio del primer rango es: ",prom1;
+	Escribir "El promedio del segundo rango es: ",prom2;
+	Escribir "El promedio del tercero rango es: ",prom3;
+	Escribir "El promedio del cuarto rango es: ",prom4;
+FinFuncion
+
+Algoritmo ejercicios 
+	Ejercicio20
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//21Escribir un algoritmo que lea cuatro números y determine si el numero1
+//es la mitad del numero 2; Y si el numero 3 es divisor del 4.
+//Ingresar 4 numeros
+//num1
+//num2
+//num3
+//num4
+//Verificamos si el umero 1 es la mitad del numero 2; Y si el numero 3 es divisor del 4.
+//si no es asi entonces el falso
+// ejemplo num1 = 5
+// num2 = 10 
+// num3 = 6
+// num4 = 2
+// en este caso si cumple la condicion 
+Funcion Ejercicio21()
+	Definir num1,num2,num3,num4 Como Entero
+	Escribir "Escriba numero 1 ";
+	Leer num1;
+	Escribir "Escriba numero 2 ";
+	Leer num2;
+	Escribir "Escriba numero 3 ";
+	Leer num3;
+	Escribir "Escriba numero 4 ";
+	Leer num4;
+	si (num1 = num2/2) y (num3 mod num4 == 0) Entonces
+		Escribir "El numero 1 es la mitad del numero 2 y El numero 3 es divisor del numero 4"
+	SiNo
+		Escribir "Falso"
+	FinSi
+FinFuncion
+
+
+Algoritmo ejercicios 
+	Ejercicio21
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//22Escribir un algoritmo que lea tres números y determine si el numero 1 es el
+//doble del numero 2 y 20% menos que el numero 3.
+
+//Ingresar 3 numeros 
+//Leerlos
+//si el numero 1 es el doble del numero 2 y 20% menos que el numero 3.
+//Ejemplo num1 = 8
+//num2 = 4
+//num3 = 10
+//como si es verdad si cumple 
+Funcion Ejercicio22()
+	Definir num1,num2,num3 Como Entero
+	Escribir "Ingrese numero 1 ";
+	//8
+	Leer num1;
+	Escribir "Ingrese numero 2 ";
+	//4
+	Leer num2;
+	Escribir "Ingrese numero 3 ";
+	//10
+	Leer num3;
+	si (num1 = num2 * 2) y (num1 = num3 * 0.8) Entonces
+		Escribir "El numero 1 es el doble del numero 2 y 20% menos que el numero 3 "
+	SiNo
+		Escribir "El numero 1 no cumple las condiciones"
+	FinSi
+FinFuncion
+
+
+
+Algoritmo ejercicios
+	Ejercicio22
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//23Realizar un programa que ingrese un número presentar un mensaje equivalente a los días
+//de la semana.
+//boseto 
+//entrada:definir dia Como caracter;
+//escribir: digite un numero del dia de la semana 1 al 7     leer dia
+// Segun dia Hacer
+//"1":escribir "lunes";
+//"2":escribir "martes";
+//"3":escribir "miercoles";
+//"4":escribir "jueves";
+//"5":escribir "viernes";
+//"6":escribir "sabado";
+//"7":escribir "doomingo";
+//FinSegun
+//salida: precentar un dia de la semana segun el numero q se digite 
+
+funcion ejercicio23()
+	definir dia Como caracter;
+	escribir "digite un numero del dia de la semana (1-7)";
+	leer dia;
+	Segun dia Hacer
+		"1":
+			escribir "lunes";
+		"2":
+			escribir "martes";
+		"3":
+			escribir "miercoles";
+		"4":
+			escribir "jueves";
+		"5":
+			escribir "viernes";
+		"6":
+			escribir "sabado";
+		"7":
+			escribir "doomingo";
+	FinSegun
+FinFuncion
+
+
+Algoritmo ejercicos 
+	ejercicio23
+	
+FinAlgoritmo
+
+//24Realizar un programa que ingrese un número presentar un mensaje equivalente a los
+//nombres de los meses del año
+//boseto
+//entrada: definir mes como caracter
+//Escribir: digite un numero del mes 1 al 12    leer:mes
+//segun mes Hacer
+//"1":Escribir "enero";
+//"2":Escribir "febrero";
+//"3":Escribir "marzo";
+//"4":escribir "abril";
+//"5":escribir "mayo";
+//"6":escribir "junio";
+//"7":escribir "julio";
+//"8":escribir "agosto";
+//"9":escribir "septiembre";
+//"10":escribir "octubre";
+//"11":escribir "noviembre";
+//"12":escribir "diciembre";
+//FinSegun
+//salida: presentar un mes segun el numero que se digite 
+Funcion ejercicio24()
+	definir mes como caracter;
+	Escribir "digite un numero del mes (1-12)"
+	leer mes;
+	segun mes Hacer
+		"1":
+			Escribir "enero";
+		"2":
+			Escribir "febrero";
+		"3":
+			Escribir "marzo";
+		"4":
+			escribir "abril";
+		"5":
+			escribir "mayo";
+		"6":
+			escribir "junio";
+		"7":
+			escribir "julio";
+		"8":
+			escribir "agosto";
+		"9":
+			escribir "septiembre";
+		"10":
+		    escribir "octubre";
+		"11":
+			escribir "noviembre";
+		"12":
+			escribir "diciembre";
+	FinSegun
+FinFuncion
+
+
+Algoritmo ejercicios
+	ejercicio24
+	
+FinAlgoritmo
+
+
+
+
+
+
+//ejercicio 25 Se requiere un algoritmo para obtener la estatura promedio de un grupo de personas, cuyo
+//número de personas se desconoce, el ciclo debe efectuarse siempre y cuando se tenga una
+//estatura registrada.
+Funcion Ejercicio25()
+	Definir promedio_esta, estatura,suma Como Reales;
+	Definir num_persona Como Entero;
+	promedio_esta<-0;
+	num_persona<-0;
+	suma<-0;
+	estatura<-1;
+	
+	Mientras estatura <> 0 Hacer
+		Escribir ("Digite estatura de la persona:");
+		Leer estatura ;
+		suma<-suma+estatura;
+		num_persona<-num_persona+1;
+	FinMientras
+	promedio_esta<-suma/(num_persona-1);
+	Escribir ("La estaura promedio es :"),promedio_esta;
+FinFuncion
+
+
+Algoritmo ejercicios 
+	Ejercicio25
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//26Realizar un algoritmo para generar e imprimir los números pares comprendidos entre 0 y 100
+Funcion Ejercicio26()
+	Definir i Como Entero;
+	
+	Para i<-1 Hasta 100 Con Paso 1 Hacer
+		Si i mod 2=0  Entonces
+			Escribir i ,":",("Es un numero par");
+		FinSi
+	FinPara
+FinFuncion
+
+
+Algoritmo ejercicios 
+	Ejercicio26
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//27Realizar un programa que realice la suma sucesiva de 10 números que ingrese por teclado,
+//presente el resultado de la suma acumulada.
+Funcion ejercicio27()
+	Definir numero, suma como Entero
+    suma = 0
+	
+    Para i = 1 hasta 10 Hacer
+        Escribir "Ingrese el número ", i, ": "
+        Leer numero
+        suma = suma + numero
+    FinPara
+	
+    Escribir "El resultado de la suma acumulada es: ", suma	
+FinFuncion
+
+
+Algoritmo ejercicios
+	ejercicio27
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//28Se requiere un algoritmo para obtener la edad promedio de un grupo de N alumnos.
+Funcion ejercicio28()
+	Definir N, suma_edades, edad_promedio como Entero
+    Definir contador como Entero
+    suma_edades = 0
+    contador = 0
+	
+    Escribir "Ingrese la cantidad de alumnos (N): "
+    Leer N
+    Para i = 1 hasta N Hacer
+        Escribir "Ingrese la edad del alumno ", i, ": "
+        Leer edad
+        suma_edades = suma_edades + edad
+        contador = contador + 1
+    FinPara
+    edad_promedio = suma_edades/contador
+    Escribir "La edad promedio del grupo de alumnos es: ", edad_promedio
+FinFuncion
+
+Algoritmo ejercicios
+	ejercicio28
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ejercicio 29
+//Una empresa tiene el registro de las horas y el valor hora que trabaja diariamente un empleado durante los 20 días del mes.
+// Requiere determinar el total de éstas, así como el sueldo que recibirá por las horas trabajadas. Realizar el algoritmo que resuelva este problema
+Funcion ejercicio29()
+    Definir horas_trabajadas, valor_hora, total_horas, sueldo Como Real
+    Definir dias Como Entero
+    
+    horas_trabajadas <- 0
+    valor_hora <- 0
+    total_horas <- 0
+    sueldo <- 0
+    
+    Escribir "Ingrese la cantidad de días trabajados en el mes: "
+    Leer dias
+    
+    Para i <- 1 Hasta dias Hacer
+        Escribir "Ingrese las horas trabajadas en el día ", i, ": "
+        Leer horas_trabajadas
+        
+        Escribir "Ingrese el valor por hora trabajada: "
+        Leer valor_hora
+        
+        total_horas <- total_horas + horas_trabajadas
+    FinPara
+    
+    sueldo <- total_horas * valor_hora
+    
+    Escribir "El total de horas trabajadas es: ", total_horas
+    Escribir "El sueldo a recibir es: ", sueldo
+FinFuncion
+
+
+Algoritmo ejercicios 
+	ejercicio29
+	
+FinAlgoritmo
+
+
+
+
+
+
+//30Un empleado de la tienda "Somos Más" realiza N ventas durante el día, se requiere saber
+//cuántas de ellas fueron mayores a $1000, cuántas de ellas fueron mayores a $500 pero menores
+//o iguales a $1000, y cuantas fueron menores o iguales a $500. Además, se requiere saber el
+//monto de lo vendido en cada categoría y de forma global. Realizar un algoritmo
+ Funcion ejercicio30()
+	
+	Definir ventas, precio, i, precio1, precio51, precio5, total1, total51, total5 Como Entero;
+	Escribir 'Ingrese la cantidad de ventas';
+	Leer ventas;
+	precio1 <- 0;
+	precio51 <- 0;
+	precio5 <- 0;
+	total1 <- 0;
+	total51 <- 0;
+	total5 <- 0;
+	Para i <- 1 Hasta ventas Con Paso 1 Hacer
+		
+		Escribir 'Valor de la venta numero ', i;
+		Leer precio;
+		
+		Si precio>1000 Entonces
+			precio1 <- precio1 + 1;
+			total1 <- total1 + precio;
+		SiNo
+			Si precio > 500 Entonces
+				precio51 <- precio51 + 1;
+				total51 <- total51 + precio;
+			SiNo
+				precio5 <- precio5 + 1;
+				total5 <- total5 + precio;
+			FinSi
+		FinSi
+	FinPara
+	
+	Escribir 'Ventas mayores a 1000 es: ', precio1;
+	Escribir 'Total de ventas mayores a 1000: $ ', total1;
+	Escribir 'Ventas mayor a 500 y menor o igual a 1000 ', precio51;
+	Escribir 'Total de ventas entre 500 y 1000: $ ', total51;
+	Escribir 'Ventas menores o iguales a 500 ', precio5;
+	Escribir 'Total de ventas menores o igual a 500 es: $ ', total5;
+	Escribir 'Total global: $ ', (total1+total51+total5);
+FinFuncion
+Algoritmo ejercicios 
+	ejercicio30
+	
+FinAlgoritmo
+
+
+
+
+
+
+//31Se dispone de las calificaciones de n alumnos del primer semestre
+//de la carrera de software de la unemi. Se tiene la nota final y la asignatura
+//('logica','requerimientos','calculos'). Se pide el promedio de
+//cada asignatura y el promedio general de todas las asignaturas de los
+//alumnos del primer semestre.
+Funcion ejercicio31()
+	Definir calculo, log, requerimiento,materia Como Caracter;
+	Definir alumnos, i Como Entero;
+	Definir nota,nota1,nota2,nota3,total1,total2,total3 Como Real;
+	Escribir "Ingrese la cantidad de alumnos";
+	Leer alumnos;
+	nota1 <- 0;
+	nota2 <- 0;
+	nota3 <- 0;
+	total1 <- 0;
+	total2 <- 0;
+	total3 <- 0;
+	
+	Para i <- 1 Hasta alumnos Con Paso 1 Hacer
+		Escribir 'digite la materia (calculo, log, requerimiento)',i;
+		Leer materia;
+		Escribir 'digite nota final de la materia',materia;
+		Leer nota;
+		Si materia = "log" Entonces
+			nota1 <- nota1 + 1;
+			total1 <- total1 + nota;
+		SiNo
+			Si materia = "calculo" Entonces
+				nota2 <- nota2 + 1;
+				total2 <- total2 + nota;
+			SiNo
+				Si materia = "requerimiento" Entonces
+					nota3 <- nota3 + 1;
+					total3 <- total3 + nota;
+				SiNo
+					Escribir "Esa materia no existe"; 
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+	Escribir "Promedio de Logica: ", (total1/nota1); 
+	Escribir "Promedio de Calculo: ", (total1/nota2); 
+	Escribir "Promedio de Requerimiento: ", (total3/nota3);
+	Escribir "Promedio final: ", (total1+total2+total3)/alumnos; 
+FinFuncion
+
+
+
+
+
+
+
+Algoritmo ejercicios 
+	ejercicio31
+	
+FinAlgoritmo
+//32Se dispone de los sueldos y categorias de los profesores de la unemi.
+//segun la categoria estos reciben un bono adicional de porcentaje al sueldo:
+//  categoria="Auxiliar" incremento del 10%
+//    categoria="Agregado" incremento del 20%
+//		categoria="principal" incremento del 50%
+//		 Se pide obtener el promedio de los sueldos y del bono de cada categoria
+//			El programa termina cuando se ingresa una categoria inexistente
+Funcion Ejercicio32()
+    Definir categoria Como Cadena
+    Definir sueldo, bono, sueldoTotal, bonoTotal, contador Como Real
+	
+    sueldoTotal <- 0
+    bonoTotal <- 0
+    contador <- 0
+	bonoA <- 0
+	sueldoA <- 0
+	SueldoAg <- 0
+	bonoAg <-0
+	bonoP <- 0
+	SueldoP <- 0
+	Escribir "Ingrese la categoría (Auxiliar, Agregado, Principal) o cualquier otra tecla para salir: "
+    categoria <- ""
+	Leer categoria
+	
+    Mientras categoria = "Auxiliar" o categoria = "Agregado" o categoria = "Principal" Hacer
+		
+        si categoria = "Auxiliar" Entonces
+            Escribir "Ingrese el sueldo: "
+            Leer sueldoA
+            bonoA <- sueldoA * 0.10
+			A <- A + 1
+		SiNo
+			si categoria = "Agregado" Entonces
+				Escribir "Ingrese el sueldo: "
+				Leer sueldoAg
+				bonoAg <- sueldoAg * 0.20
+				Ag <- Ag +1
+			SiNo
+				si categoria = "Principal" Entonces
+					Escribir "Ingrese el sueldo: "
+					Leer sueldoP
+					bonoP <- sueldoP * 0.50
+					P <- P +1
+				FinSi
+			FinSi
+			
+        FinSi
+		Escribir "Ingrese categoria"
+		Leer categoria
+        si categoria <> "Auxiliar" y categoria <> "Agregado" y categoria <> "Principal" Entonces
+            Escribir "Categoría inválida. El ciclo ha terminado."
+        FinSi
+        sueldoTotal <- sueldoTotal + sueldoP + sueldoAg + sueldoA
+        bonoTotal <- bonoTotal + bonoP + bonoAg + bonoA
+        contador <- contador + 1
+    FinMientras
+	
+    si contador > 0 Entonces
+		promedioA <- sueldoA/A
+		promedioAg <- sueldoAg/Ag
+		promedioP <- sueldoP/P
+		promediobA <- bonoA/A
+		promediobAg <- bonoAg/Ag
+		promediobP <- bonoP/P
+		
+		Escribir "Promedio de Sueldo de Auxiliar : ", promedioA
+		Escribir "Promedio de Bono de Auxiliar : ", promediobA 
+        Escribir "Promedio de Sueldo de Agregado : ", promedioAg
+		Escribir "Promedio de Bono de Agregado : ", promediobAg
+		Escribir "Promedio de Sueldo de Principal : ", promedioP 
+		Escribir "Promedio de Bono de Principal : ", promediobP
+    FinSi
+FinFuncion
+Algoritmo ejercicios 
+	Ejercicio32
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+//33Dado una serie de n cantidad de viajes dado cada pasaje y su recorrido determinar
+//el precio de cada pasaje segun el recorrido en kilometros
+//si el recorrido es hasta 100 km el pasaje no tiene incremento
+//	si el reccorido es mas de 100 km el pasaje tiene un incremento
+//	del 20%. Presentar el promedio y la cantidad de pasajes con recorrido
+//	hasta 100km y mayor de 100 km.
+Funcion ejercicio33
+	Definir viajes, pasaje, pasaje20, km Como Entero;
+	Definir i ,menos100, mas100 Como Entero;
+	Definir suma_pasaje, promedio_pasaje Como Real;
+	Escribir 'Ingrese la cantidad de viajes realizados';
+	Leer viajes;
+	
+	menos100 <- 0;
+	mas100 <- 0;
+	suma_pasaje <- 0;
+	promedio_pasaje <- 0;
+	
+	Para i <- 1 Hasta viajes Con Paso 1 Hacer
+		Escribir 'Ingrese el recorrido del viaje ", i, " en kilometros: ";
+		Leer km;
+		Si km <= 100 Entonces
+			pasaje <- km;
+			menos100 <- menos100 + 1;
+		SiNo
+			pasaje <- km + (km * 0.20);
+			mas100 <- mas100 + 1;
+		FinSi
+		suma_pasaje <- suma_pasaje + pasaje;
+	FinPara
+	promedio_pasaje <- suma_pasaje /viajes;
+	Escribir "Cantidad de pasajes del recorrido hasta 100 km: ", menos100;
+	Escribir "Cantidad de pasajes del recorrido mayor a 100 km: ", mas100;
+	Escribir "Promedio de precios de los pasajes: ", promedio_pasaje;
+	
+	
+	
+FinFuncion
+Algoritmo ejericios 
+	ejercicio33
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//34Diseñar un algoritmo que lea y presente una serie de números distintos de
+//cero. El algoritmo debe terminar con un valor cero que no se debe presentar.
+//Finalmente se desea obtener la cantidad y el promedio de los valores distintos
+//de cero
+Funcion Ejercicio34()
+	Definir numero, suma, contador Como Entero
+	Definir promedio Como Real
+	suma <- 0
+	contador <- 0
+	Escribir "Ingrese una serie de números distintos de cero (finalice con 0):"
+	Leer numero
+	
+	Mientras numero <> 0 Hacer
+		suma <- suma + numero
+		contador <- contador + 1
+		
+		Leer numero
+	Fin Mientras
+	
+	Si contador > 0 Entonces
+		promedio <- suma / contador
+		Escribir "La cantidad de valores distintos de cero es:", contador
+		Escribir "El promedio de los valores distintos de cero es:", promedio
+	Sino
+		Escribir "No se ingresaron valores distintos de cero."
+	FinSi
+FinFuncion
+
+Algoritmo ejercicios 
+	Ejercicio34
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//35
+
+Funcion Ejercicio35()
+	Definir num, cantidad, total Como Entero
+	cantidad <- 0
+	total <- 0
+	Escribir "Ingrese una serie de números positivos (numero negativo para finalizar):"
+	Leer num
+	Mientras num >= 0 Hacer
+		Si num % 3 = 0 Entonces
+			cantidad <- cantidad + 1
+			total <- total + num
+		FinSi
+		
+		Leer num
+	Fin Mientras
+	
+	Escribir "La cantidad de números positivos múltiplos de 3 es:", cantidad
+	Escribir "El total de los numeros multiplos de 3 es : ", total
+FinFuncion
+
+
+
+
+Algoritmo ejercicios 
+	Ejercicio35
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proceso deber
+	//ejercicio1();
+	//ejercicio2();
+	//ejercicio3();
+	//ejercicio4();
+	//ejercicio5();
+	//ejercicio6();
+	//ejercicio7();
+	//ejercicio8();
+	//ejercicio9();
+	//ejercici010();
+	//ejercicio11();
+	//ejercicio12();
+	//ejercicio13();
+	//ejercicio14();
+	//ejercicio15();
+	//ejercicio16();
+	//ejercicio17();
+	//ejercicio18();
+	//ejercicio19();
+	//ejercicio20();
+	//ejercicio21();
+	//ejercicio22();
+	//ejercicio23();
+	//ejercicio24();
+	//ejercicio25();
+	//ejercicio26();
+	//ejercicio27();
+	//ejercicio28();
+	//ejercicio29();
+	//ejercicio30();
+	//ejercicio31();
+	//ejercicio32();
+	//ejercicio33();
+	//ejercicio34();
+	//ejercicio35();
+	
+FinProceso
